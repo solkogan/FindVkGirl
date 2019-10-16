@@ -6,6 +6,7 @@ import os.path
 timestamp = int(time.time())
 
 # Заходим ВКонтакте под своим логином (с выключенной в настройках двухфакторной авторизацией)
+# В строку vk_session = vk_api.VkApi('', '') в кавычках нужно поставить ваш логи и пароль ВК
 vk_session = vk_api.VkApi('', '')
 vk_session.auth()
 vk = vk_session.get_api()
@@ -14,7 +15,7 @@ vk = vk_session.get_api()
 vozrast=20
 vozrastmax=21
 
-# Номер города
+# Номер города (посмотрите его в поиске ВК в адресной строке при выборе в поиске города)
 citynumber=123
 
 # 1 - девушки, 2 - парни
